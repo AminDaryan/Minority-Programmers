@@ -15,6 +15,7 @@ const Header = styled.div`
 const Row = styled.div`
   display: flex;
   margin: 2rem 0;
+  overflow: auto;
 
   & > div {
     margin-right: 1.5rem;
