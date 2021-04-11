@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-import ConnectWalletButton from "./Components/ConnectWalletButton/ConnectWalletButton";
-import Logo from "./Components/Logo/Logo";
-import Links from "./Components/Links/Links";
-import NavigationLinks from "./Components/NavigationLinks/NavigationLinks";
-import SearchButtons from "./Components/SearchButton/SearchButton";
+import ConnectWalletButton from "./Components/ConnectWalletButton";
+import Logo from "./Components/Logo";
+import Links from "./Components/Links";
+import NavigationLinks from "./Components/NavigationLinks";
+import SearchButtons from "./Components/SearchButton";
 
 const HeaderContainer = styled.div`
   position: fixed;

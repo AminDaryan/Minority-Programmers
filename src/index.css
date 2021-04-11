@@ -10,9 +10,17 @@ body {
     "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
-#root{
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#root {
   height: 100%;
   background: linear-gradient(to right, #ff00b8 0%, #ffc700 100%);
 }

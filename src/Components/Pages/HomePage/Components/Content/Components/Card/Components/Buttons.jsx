@@ -2,11 +2,16 @@ import React from "react";
 
 // Utils
 import styled from "styled-components";
+import PropTypes from "prop-types";
+
+// Components
+import LearnButton from "Components/Common/LearnButton";
 
 const ButtonsContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 1rem 0;
+  width: 100%;
 
   & > button {
     border: none;
@@ -14,7 +19,7 @@ const ButtonsContainer = styled.div`
     color: white;
     font-size: 1.5rem;
     height: 3.5rem;
-    width: 8rem;
+    width: 100%;
     cursor: pointer;
     transition: all 0.2s ease-out;
 
@@ -34,15 +39,15 @@ const GiveButton = styled.button`
   margin-right: 0.5rem;
 `;
 
-const LearnButton = styled.button`
-  background: linear-gradient(161.32deg, #ff00b8 3.86%, #151371 98.64%);
-`;
-
-export default function Buttons() {
+export default function Buttons({ giveButton }) {
   return (
     <ButtonsContainer>
-      <GiveButton>GIVE</GiveButton>
-      <LearnButton>LEARN</LearnButton>
+      {giveButton && <GiveButton>GIVE</GiveButton>}
+      <LearnButton />
     </ButtonsContainer>
   );
 }
+
+Buttons.propTypes = {
+  giveButton: PropTypes.bool.isRequired,
+};

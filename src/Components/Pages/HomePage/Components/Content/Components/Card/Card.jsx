@@ -5,29 +5,30 @@ import styled from "styled-components";
 import PropTypes from "prop-types";
 
 // Components
-import Card from "Components/Common/Card/Card";
-import Buttons from "./Components/Buttons/Buttons";
-import Bar from "./Components/Bar/Bar";
+import CardTemplate from "Components/Common/CardTemplate";
+import Buttons from "./Components/Buttons";
+import Bar from "./Components/Bar";
 
 const Image = styled.img`
   height: 7rem;
   max-width: 12rem;
 `;
 
-export default function Content({ item }) {
+export default function Card({ item }) {
   return (
-    <Card>
+    <CardTemplate>
       <Image src={item.logo} alt="" />
-      <Buttons />
+      <Buttons giveButton={item.giveButton} />
       <Bar item={item} />
-    </Card>
+    </CardTemplate>
   );
 }
 
-Content.propTypes = {
+Card.propTypes = {
   item: PropTypes.shape({
     logo: PropTypes.string.isRequired,
     funded: PropTypes.number.isRequired,
-    fundNeeded: PropTypes.number.isRequired,  
+    fundNeeded: PropTypes.number.isRequired,
+    giveButton: PropTypes.bool.isRequired,
   }).isRequired,
 };
