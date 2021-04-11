@@ -25,13 +25,13 @@ const BarFooter = styled.span`
 export default function Bar({ item }) {
   return (
     <BarContainer>
-      <BarHeader>{`$${item.funded.toLocaleString()}/$${item.fundNeeded.toLocaleString()}`}</BarHeader>
-      <TheBar numerator={item.funded} denominator={item.fundNeeded} />
+      <BarHeader>{`$${item.currentFunding.toLocaleString()}/$${item.fundingGoal.toLocaleString()}`}</BarHeader>
+      <TheBar numerator={item.currentFunding} denominator={item.fundingGoal} />
       <BarFooter>
         {Number(
-          item.funded / item.fundNeeded <= 1 ? item.funded / item.fundNeeded : 1
+          item.currentFunding / item.fundingGoal <= 1 ? item.currentFunding / item.fundingGoal : 1
         ).toFixed(2) * 100}
-        % Funded
+        % currentFunding
       </BarFooter>
     </BarContainer>
   );
@@ -39,7 +39,7 @@ export default function Bar({ item }) {
 
 Bar.propTypes = {
   item: PropTypes.shape({
-    funded: PropTypes.number.isRequired,
-    fundNeeded: PropTypes.number.isRequired,
+    currentFunding: PropTypes.number.isRequired,
+    fundingGoal: PropTypes.number.isRequired,
   }).isRequired,
 };

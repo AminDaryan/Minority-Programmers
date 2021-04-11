@@ -17,18 +17,18 @@ const Image = styled.img`
 export default function Card({ item }) {
   return (
     <CardTemplate>
-      <Image src={item.logo} alt="" />
-      <Buttons giveButton={item.giveButton} />
+      <Image src={item.projectLogo} alt="" />
+      <Buttons giveButtonLink={item.giveButtonLink} />
       <Bar item={item} />
     </CardTemplate>
   );
-}
+} 
 
 Card.propTypes = {
   item: PropTypes.shape({
-    logo: PropTypes.string.isRequired,
-    funded: PropTypes.number.isRequired,
-    fundNeeded: PropTypes.number.isRequired,
-    giveButton: PropTypes.bool.isRequired,
+    projectLogo: PropTypes.string.isRequired,
+    currentFunding: PropTypes.number.isRequired,
+    fundingGoal: PropTypes.number.isRequired,
+    giveButtonLink: PropTypes.string.isRequired,
   }).isRequired,
 };
