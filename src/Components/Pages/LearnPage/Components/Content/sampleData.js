@@ -5,7 +5,7 @@ export const myCourses = [
         modulesCompleted: 7.1,
         allModules: 10,
         earn: 20,
-        learnButtonLink: "/",
+        learnButtonLink: "/1",
         id: 1,
     },
     {
@@ -14,7 +14,7 @@ export const myCourses = [
         modulesCompleted: 6.5,
         allModules: 10,
         earn: 10,
-        learnButtonLink: "/",
+        learnButtonLink: "/2",
         id: 2,
     },
     {
@@ -23,7 +23,7 @@ export const myCourses = [
         modulesCompleted: 8,
         allModules: 10,
         earn: 35,
-        learnButtonLink: "/",
+        learnButtonLink: "/3",
         id: 3,
     },
     {
@@ -32,7 +32,7 @@ export const myCourses = [
         modulesCompleted: 3,
         allModules: 10,
         earn: 40,
-        learnButtonLink: "/",
+        learnButtonLink: "/4",
         id: 4,
     },
     {
@@ -41,7 +41,7 @@ export const myCourses = [
         modulesCompleted: 4.1,
         allModules: 10,
         earn: 15,
-        learnButtonLink: "/",
+        learnButtonLink: "/5",
         id: 5,
     },
 ]
@@ -53,7 +53,7 @@ export const featuredCurses = [
         modulesCompleted: 9.8,
         allModules: 10,
         earn: 20,
-        learnButtonLink: "/",
+        learnButtonLink: "/1",
         id: 1,
     },
     {
@@ -62,7 +62,7 @@ export const featuredCurses = [
         modulesCompleted: 10,
         allModules: 10,
         earn: 30,
-        learnButtonLink: "/",
+        learnButtonLink: "/2",
         id: 2,
     },
     {
@@ -71,7 +71,7 @@ export const featuredCurses = [
         modulesCompleted: 5.8,
         allModules: 10,
         earn: 50,
-        learnButtonLink: "/",
+        learnButtonLink: "/3",
         id: 3,
     },
     {
@@ -80,7 +80,7 @@ export const featuredCurses = [
         modulesCompleted: 7.8,
         allModules: 10,
         earn: 35,
-        learnButtonLink: "/",
+        learnButtonLink: "/4",
         id: 4,
     },
     {
@@ -89,7 +89,7 @@ export const featuredCurses = [
         modulesCompleted: 1,
         allModules: 10,
         earn: 45,
-        learnButtonLink: "/",
+        learnButtonLink: "/5",
         id: 5,
     },
 ]

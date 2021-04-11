@@ -34,7 +34,7 @@ export default function Content({ item }) {
         <Badge earn={item.earn} />
         <Title>{item.title}</Title>
         <Description>{item.description}</Description>
-        <Buttons />
+        <Buttons item={item} />
         <Bar item={item} />
       </CardContainer>
     </CardTemplate>

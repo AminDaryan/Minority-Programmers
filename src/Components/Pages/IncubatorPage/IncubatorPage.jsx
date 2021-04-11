@@ -12,7 +12,7 @@ const ContentContainer = styled.div`
   padding: 3rem 0;
 `;
 
-export default function LearnPage() {
+export default function IncubatorPage() {
   return (
     <ContentContainer>
       <Header />

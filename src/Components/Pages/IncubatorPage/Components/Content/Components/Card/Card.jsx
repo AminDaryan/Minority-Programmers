@@ -18,11 +18,11 @@ export default function Card({ item }) {
   return (
     <CardTemplate>
       <Image src={item.projectLogo} alt="" />
-      <Buttons giveButtonLink={item.giveButtonLink} />
+      <Buttons item={item} />
       <Bar item={item} />
     </CardTemplate>
   );
-} 
+}
 
 Card.propTypes = {
   item: PropTypes.shape({
@@ -30,5 +30,6 @@ Card.propTypes = {
     currentFunding: PropTypes.number.isRequired,
     fundingGoal: PropTypes.number.isRequired,
     giveButtonLink: PropTypes.string.isRequired,
+    learnButtonLink: PropTypes.string.isRequired,
   }).isRequired,
 };

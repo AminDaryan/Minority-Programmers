@@ -22,7 +22,7 @@ const LogoContainer = styled.div`
 export default function Logo() {
   return (
     <LogoContainer>
-      <Link to="/">
+      <Link to="/incubator">
         <MinorityProgrammersLogo />
       </Link>
     </LogoContainer>

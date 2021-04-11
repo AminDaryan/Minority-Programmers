@@ -39,15 +39,17 @@ const GiveButton = styled.button`
   margin-right: 0.5rem;
 `;
 
-export default function Buttons({ giveButtonLink }) {
+export default function Buttons({ item }) {
   return (
     <ButtonsContainer>
-      {giveButtonLink && <GiveButton>GIVE</GiveButton>}
-      <LearnButton />
+      {item.giveButtonLink && <GiveButton>GIVE</GiveButton>}
+      <LearnButton item={item} />
     </ButtonsContainer>
   );
 }
 
 Buttons.propTypes = {
-  giveButtonLink: PropTypes.string.isRequired,
+  item: PropTypes.shape({
+    giveButtonLink: PropTypes.string.isRequired,
+  }).isRequired,
 };

@@ -7,7 +7,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // Components
 import Header from 'Components/Header/Header';
 import LearnPage from "Components/Pages/LearnPage/LearnPage";
-import HomePage from "Components/Pages/HomePage/HomePage";
+import IncubatorPage from "Components/Pages/IncubatorPage/IncubatorPage";
+import StartUpPage from "Components/Pages/StartUpPage/StartUpPage";
 
 const AppContainer = styled.div`
 height: 100%;
@@ -35,8 +36,9 @@ function App() {
         <MainContainer>
           <Main>
             <Switch>
-              <Route exact path="/" render={() => <HomePage />} />
-              <Route exact path="/learn" render={() => <LearnPage />} />
+              <Route exact path="/incubator" render={(props) => <IncubatorPage {...props} />} />
+              <Route exact path="/incubator/:id" render={(props) => <StartUpPage  {...props} />} />
+              <Route exact path="/learn" render={(props) => <LearnPage  {...props} />} />
             </Switch>
           </Main>
         </MainContainer>
