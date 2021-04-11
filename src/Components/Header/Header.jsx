@@ -14,6 +14,7 @@ const HeaderContainer = styled.div`
   width: 100%;
   height: 9rem;
   background-color: white;
+  z-index: 100;
 `;
 
 export default function Header() {

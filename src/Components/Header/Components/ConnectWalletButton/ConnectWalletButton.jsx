@@ -17,8 +17,8 @@ const Button = styled.button`
   position: relative;
   z-index: 3;
   height: 2rem;
+  width: 9.5rem;
   border-radius: 30px;
-  padding: 0 1rem;
   font-size: 1rem;
   background: linear-gradient(to right, #ff00b8 0%, #ffc700 100%);
 
@@ -45,7 +45,7 @@ const Button = styled.button`
 
     & span {
       background-image: linear-gradient(to right, #fff 0%, #fff 100%);
-      font-weight: 700;
+      font-weight: bold;
     }
   }
 `;
