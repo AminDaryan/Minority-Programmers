@@ -23,7 +23,12 @@ const Button = styled.button`
   width: 32.5%;
   font-size: 3rem;
   padding: 0rem 4rem;
+  transition:all 0.2s  ease-out;
   cursor: pointer;
+
+  &:hover{
+    font-size: 3.2rem;
+  }
 `;
 
 export default function ButtonsRow() {
