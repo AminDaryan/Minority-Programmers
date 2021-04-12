@@ -9,6 +9,7 @@ import Header from 'Components/Header/Header';
 import LearnPage from "Components/Pages/LearnPage/LearnPage";
 import IncubatorPage from "Components/Pages/IncubatorPage/IncubatorPage";
 import StartUpPage from "Components/Pages/StartUpPage/StartUpPage";
+import CoursePage from "Components/Pages/CoursePage/CoursePage";
 
 const AppContainer = styled.div`
 height: 100%;
@@ -39,6 +40,7 @@ function App() {
               <Route exact path="/incubator" render={(props) => <IncubatorPage {...props} />} />
               <Route exact path="/incubator/:id" render={(props) => <StartUpPage  {...props} />} />
               <Route exact path="/learn" render={(props) => <LearnPage  {...props} />} />
+              <Route exact path="/learn/:id" render={(props) => <CoursePage  {...props} />} />
             </Switch>
           </Main>
         </MainContainer>

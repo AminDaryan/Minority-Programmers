@@ -6,8 +6,8 @@ import logo4 from "Assets/Images/SampleLogos/4.png";
 
 export const featuredStartUps = [
     {
-        projectName: "",
-        projectDescription: "",
+        projectName: "The Project",
+        projectDescription: "The Project Description",
         projectLogo: logo1,
         currentFunding: 1000,
         fundingGoal: 1400,
@@ -16,8 +16,8 @@ export const featuredStartUps = [
         id: 1,
     },
     {
-        projectName: "",
-        projectDescription: "",
+        projectName: "The Project",
+        projectDescription: "The Project Description",
         projectLogo: logo2,
         currentFunding: 130000,
         fundingGoal: 190000,
@@ -26,8 +26,8 @@ export const featuredStartUps = [
         id: 2,
     },
     {
-        projectName: "",
-        projectDescription: "",
+        projectName: "The Project",
+        projectDescription: "The Project Description",
         projectLogo: logo3,
         currentFunding: 800,
         fundingGoal: 1800,
@@ -36,8 +36,8 @@ export const featuredStartUps = [
         id: 3,
     },
     {
-        projectName: "",
-        projectDescription: "",
+        projectName: "The Project",
+        projectDescription: "The Project Description",
         projectLogo: logo4,
         currentFunding: 1600,
         fundingGoal: 1400,
@@ -46,8 +46,8 @@ export const featuredStartUps = [
         id: 4,
     },
     {
-        projectName: "",
-        projectDescription: "",
+        projectName: "The Project",
+        projectDescription: "The Project Description",
         projectLogo: logo1,
         currentFunding: 1600,
         fundingGoal: 1900,
@@ -59,8 +59,8 @@ export const featuredStartUps = [
 
 export const upcomingStartUps = [
     {
-        projectName: "",
-        projectDescription: "",
+        projectName: "The Project",
+        projectDescription: "The Project Description",
         projectLogo: logo3,
         currentFunding: 500,
         fundingGoal: 1000,
@@ -69,8 +69,8 @@ export const upcomingStartUps = [
         id: 1,
     },
     {
-        projectName: "",
-        projectDescription: "",
+        projectName: "The Project",
+        projectDescription: "The Project Description",
         projectLogo: logo1,
         currentFunding: 13000,
         fundingGoal: 15000,
@@ -79,8 +79,8 @@ export const upcomingStartUps = [
         id: 2,
     },
     {
-        projectName: "",
-        projectDescription: "",
+        projectName: "The Project",
+        projectDescription: "The Project Description",
         projectLogo: logo2,
         currentFunding: 600,
         fundingGoal: 1200,
@@ -89,8 +89,8 @@ export const upcomingStartUps = [
         id: 3,
     },
     {
-        projectName: "",
-        projectDescription: "",
+        projectName: "The Project",
+        projectDescription: "The Project Description",
         projectLogo: logo1,
         currentFunding: 1800,
         fundingGoal: 1900,
@@ -99,8 +99,8 @@ export const upcomingStartUps = [
         id: 4,
     },
     {
-        projectName: "",
-        projectDescription: "",
+        projectName: "The Project",
+        projectDescription: "The Project Description",
         projectLogo: logo3,
         currentFunding: 1200,
         fundingGoal: 1300,

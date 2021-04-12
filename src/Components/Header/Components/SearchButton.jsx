@@ -34,7 +34,7 @@ const SearchButtonIcon = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #141471;
+  background-color: #151371;
   border-radius: 50%;
   height: 4.8rem;
   width: 4.8rem;

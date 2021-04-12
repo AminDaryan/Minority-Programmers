@@ -6,43 +6,19 @@ import PropTypes from "prop-types";
 
 // Components
 import LearnButton from "Components/Common/LearnButton";
+import GiveButton from "Components/Common/GiveButton";
 
 const ButtonsContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 1rem 0;
   width: 100%;
-
-  & > button {
-    border: none;
-    border-radius: 30px;
-    color: white;
-    font-size: 1.5rem;
-    height: 3.5rem;
-    width: 100%;
-    cursor: pointer;
-    transition: all 0.2s ease-out;
-
-    &:hover {
-      font-size: 1.6rem;
-    }
-  }
-`;
-
-const GiveButton = styled.button`
-  background: linear-gradient(
-    104.61deg,
-    #ff00b8 2.65%,
-    #ff655b 51.83%,
-    #ffc700 100%
-  );
-  margin-right: 0.5rem;
 `;
 
 export default function Buttons({ item }) {
   return (
     <ButtonsContainer>
-      {item.giveButtonLink && <GiveButton>GIVE</GiveButton>}
+      <GiveButton giveButtonLink={item?.giveButtonLink} />
       <LearnButton item={item} />
     </ButtonsContainer>
   );

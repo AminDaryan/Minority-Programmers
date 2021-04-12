@@ -31,7 +31,7 @@ export default function Bar({ item }) {
         {Number(
           item.currentFunding / item.fundingGoal <= 1 ? item.currentFunding / item.fundingGoal : 1
         ).toFixed(2) * 100}
-        % currentFunding
+        % Funded
       </BarFooter>
     </BarContainer>
   );

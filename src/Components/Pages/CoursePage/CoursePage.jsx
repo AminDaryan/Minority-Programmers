@@ -14,16 +14,16 @@ const ContentContainer = styled.div`
 `;
 
 export default function StartUpPage(props) {
-  const [startUpInfo, setStartUpInfo] = useState(null);
+  const [courseInfo, setCourseInfo] = useState(null);
 
   useEffect(() => {
-    setStartUpInfo(props.location.state.item);
+    setCourseInfo(props.location.state.item);
   }, [props]);
 
   return (
     <ContentContainer>
-      <ContentHeader startUpInfo={startUpInfo} />
-      <Content startUpInfo={startUpInfo} />
+      <ContentHeader courseInfo={courseInfo} />
+      <Content courseInfo={courseInfo} />
     </ContentContainer>
   );
 }
